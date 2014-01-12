@@ -1,0 +1,107 @@
+@heading-font: 'Lustria', serif;
+@logo-color: rgba(255, 0, 0, 0.78);
+@body-font: 'Exo 2', sans-serif;
+@primary-color: rgba(22, 80, 4, 0.87);
+@link-color: rgba(240, 71, 71, 1);
+
+.circle (@radius: 50%, @width: 120px, @height: 120px, @border: 6px solid #eee) {
+	width: @width;
+	height: @height;
+	border-radius: @radius;
+	border: @border;
+}
+
+.center () {
+	text-align: center !important;
+	margin: 0px auto !important;
+}
+
+i.logo-icon{
+	color: @logo-color;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: @heading-font;
+	color: darken(black, 80%);
+	text-shadow: 1px 0px 0px #444;
+}
+
+.center{
+	.center();
+}
+
+.big-para{
+	font-size: 110%;
+}
+
+body{
+	font-family: @body-font;
+	padding-top: 25px;
+}
+
+.circle{
+	.circle();
+	.center();
+	i{
+		font-size: 4em;
+		padding-top: 25%;
+		color: @logo-color;
+	}
+}
+
+.extra-padding{
+	padding-top: 10%;
+}
+
+.medium-size > *{
+	font-size: 125%;
+}
+
+.huge-size{
+	font-size: 250%;
+}
+
+a{
+	color: @link-color;
+}
+
+a:hover{
+	color: @link-color;
+	text-decoration: underline;
+}
+
+.social-icons{
+	a, i{
+		color: #004466;
+	}
+
+	a:hover, i:hover{
+		color: lighten(#004466, 10%);
+	}
+}
+
+.social-icons{
+	padding-bottom: 20px;
+}
+
+.footer-icon{
+	color: #D1D1D1;
+	text-shadow: 2px 2px 4px #999;
+}
+
+@media only screen and (max-width: 479px) {
+	.extra-padding{
+		padding-top: 20%;
+	}
+	.sub-main{
+		p{
+			line-height: 1.4 !important;
+		}
+	}
+}
+
+.sub-main{
+	p{
+		line-height: 0.7;
+	}
+}

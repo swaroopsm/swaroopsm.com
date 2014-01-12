@@ -1,4 +1,4 @@
-swaroopsm.com
+Swaroop SM
 =============
 
-My Site
+My Personal Site
