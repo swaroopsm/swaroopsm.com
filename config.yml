@@ -1,6 +1,6 @@
 name: Swaroop SM
 port: 1619
-basepath: /testing
+basepath: /
 assets: assets
 destination: public
 permalink:
@@ -15,5 +15,4 @@ include_assets:
  - fonts
 remote:
  host: swaroopsm.com
- username: swaroop
  path: sites/swaroopsm.com
