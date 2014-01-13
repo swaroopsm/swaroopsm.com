@@ -10,17 +10,32 @@
 			<hr>
 		</div>
 		<div class="large-2 small-6 column center">
-			Web Developer, Bangalore, IN
+			Featured Work
 		</div>
 		<div class="large-5 small-3 columns">
 			<hr>
 		</div>
 
-		{{ content }}
 
    </div>
   </div><br>
 
+	<div class="row">
+		<div class="large-12 columns">
+			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 center">
+				{% for section in sections %}
+					<li class="radius">
+					<div class="panel no-border">
+						{{ section[1] }}
+						<div class="secondary-link">
+							<i class="ion-pin"></i> {{ section[0] | split:'~' | last | upcase }}
+						</div>
+					</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
  
     <!-- Footer -->
  
