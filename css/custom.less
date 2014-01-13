@@ -3,6 +3,7 @@
 @body-font: 'Exo 2', sans-serif;
 @primary-color: rgba(22, 80, 4, 0.87);
 @link-color: rgba(240, 71, 71, 1);
+@secondary-link-color: #004466;
 
 .circle (@radius: 50%, @width: 120px, @height: 120px, @border: 6px solid #eee) {
 	width: @width;
@@ -108,6 +109,30 @@ a:hover{
 	p{
 		line-height: 0.7;
 	}
+}
+
+.secondary-link{
+	a{
+		color: @secondary-link-color;
+	}
+}
+
+.no-border{
+	border: none;
+}
+
+.panel{
+	transition: box-shadow 0.5s;
+	-webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	background-color: rgba(238, 238, 238, 0.3) !important;
+}
+
+.panel:hover{
+	box-shadow: 0px 0px 40px #999;
+	-webkit-box-shadow: 0px 0px 40px #999;
+	-moz-box-shadow: 0px 0px 40px #999;
 }
 
 .rotate-animate{
