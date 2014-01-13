@@ -5,7 +5,7 @@ date: 2014-01-12
 template: work
 ---
 {% section first~ui/ux %}
-<a href="http://kssec.in">
+<a href="http://ksec.in">
 ![KSEC](/assets/images/work-ksec.jpg)
 
 Karnataka State Ex-Servicemen Council(R)
