@@ -144,6 +144,23 @@ code {
   padding: 5px;
   font-size: 95%;
 }
+.tags h1,
+.tags h2,
+.tags h3,
+.tags h4,
+.tags h5,
+.tags h6 {
+  color: #f04747;
+}
+.tags h1 a,
+.tags h2 a,
+.tags h3 a,
+.tags h4 a,
+.tags h5 a,
+.tags h6 a {
+  color: #f04747;
+  text-shadow: none;
+}
 .rotate-animate {
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
