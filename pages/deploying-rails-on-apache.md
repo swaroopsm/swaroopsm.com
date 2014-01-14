@@ -1,5 +1,5 @@
 ---
-title: Deploying Rails Application On Apache
+title: Deploying A Rails Application On Apache
 author: Swaroop SM
 date: 2013-10-05
 template: post
