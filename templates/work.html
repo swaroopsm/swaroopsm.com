@@ -23,12 +23,12 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 center">
-				{% for section in sections %}
+				{% for section in page.sections %}
 					<li class="radius">
 					<div class="panel no-border">
-						{{ section[1] }}
+						{{ section.content }}
 						<div class="secondary-link">
-							<i class="ion-pin"></i> {{ section[0] | split:'~' | last | upcase }}
+							<i class="ion-pin"></i> {{ section.name | split: "~" | last | upcase }}
 						</div>
 					</div>
 					</li>
