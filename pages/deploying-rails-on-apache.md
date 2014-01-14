@@ -7,6 +7,11 @@ category: blog
 permalink:
  style: /:category/:title
  pretty: true
+tagged:
+ - ruby
+ - rails
+ - apache
+ - web
 ---
 
 You have built an awesome application using Ruby on Rails, and have no idea how to make it available to the world wide web.
