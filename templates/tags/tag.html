@@ -1,2 +1,58 @@
-<!-- Template for a single tag page -->
-{{ pages }}
+{% include header %}
+<body>
+ 
+  <div class="row">
+    <div class="large-12 columns">
+ 
+
+		<div class="logo center">
+			<a href="/">
+				<div class="circle"><i class="ion-navigate"></i></div>
+			</a>
+			<h2>Tagged '{{ tagged.tag | capitalize }}'</h2>
+		</div>
+
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+		<div class="large-2 small-6 column center">
+			Posts Tagged In {{ tagged.tag | capitalize }}
+		</div>
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+
+
+   </div>
+  </div><br>
+
+	<div class="row">
+		<div class="large-12 columns">
+			{% for page in tagged.pages %}
+			<h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
+			<p class="post-info">
+				<i class="ion-calendar"></i> <span>{{ page.date | date: "%B %d, %Y" }}</span>
+				<i class="ion-pricetag"></i>
+				{% for tag in page.tags %}
+					<a href="{{ tag.url }}">{{ tag.name | downcase }}</a>{% unless forloop.last %}, {% endunless %}
+				{% endfor %}
+			</p>
+			<br>
+			<div>
+				{{ page.content | truncatewords: 90 }}
+			</div>
+			<a href="{{ page.url }}">Read More <sub><i class="ion-more"></i></sub></a>
+			<br><br><br>
+			{% endfor %}
+		</div>
+	</div>
+ 
+    <!-- Footer -->
+ 
+  	<br>
+  	<br>
+  	<br>
+  	
+{% include footer %}
+</body>
+</html>

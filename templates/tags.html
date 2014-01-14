@@ -1,0 +1,63 @@
+{% include header %}
+<body>
+ 
+  <div class="row">
+    <div class="large-12 columns">
+ 
+		{% include logo %}
+
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+		<div class="large-2 small-6 column center">
+			Tagged Posts
+		</div>
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+
+
+   </div>
+  </div><br>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4 center">
+				{% for tag in site.tags %}
+					<li class="radius">
+					<div class="panel no-border tags">
+						<h4>
+							<a href="{{ tag.url }}">
+								{{ tag.name | capitalize }}</a>
+						</h4>
+						
+						{% for image in page.images %}
+						{% capture image_tag  %}{{ image.original | split: "-" | last }}{% endcapture %}
+							{% if image_tag == tag.name %}
+								<img src="{{ image.url }}" alt="">
+							{% endif %}
+						{% endfor %}
+						<hr>
+						{% for info in site.config.taginfo %}
+							{% if info.name == tag.name %}
+								{{ info.description }}
+							{% endif %}
+						{% endfor %}
+						<div class="secondary-link">
+						</div>
+					</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+ 
+    <!-- Footer -->
+ 
+  	<br>
+  	<br>
+  	<br>
+  	
+{% include footer %}
+</body>
+</html>

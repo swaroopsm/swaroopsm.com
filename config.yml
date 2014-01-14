@@ -6,13 +6,24 @@ destination: public
 permalink:
   style: :name
   pretty: true
-tagged: tagged
+tagged: 
+ name: tagged
+ permalink: blog/
 archive: archive
 homepage: home
 include_assets:
  - css
  - js
  - fonts
+taginfo:
+ - name: ruby
+   description: A dynamic and general-purpose programming language.
+ - name: rails
+   description: An open source web application framework which runs on Ruby.
+ - name: apache
+   description: A web server application.
+ - name: web
+   description: A system of interlinked hypertext documents accessed via the Internet.
 remote:
  host: swaroopsm.com
  path: sites/swaroopsm.com
