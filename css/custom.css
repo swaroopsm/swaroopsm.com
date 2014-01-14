@@ -33,11 +33,11 @@ h5 a:hover,
 h6 a:hover {
   color: #004466;
 }
-.post-info i {
-  padding-right: 5px;
+.post-info i:not(:first-child) {
+  padding-left: 15px;
 }
 .post-info span {
-  padding-right: 15px;
+  padding-left: 3px;
 }
 .post-info * {
   font-size: 105%;
