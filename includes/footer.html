@@ -14,5 +14,8 @@
 		<br><br>
 	</div>
 
+{% if page.category == "blog" %}
+	{% include disqus %}
+{% endif %}
 {% include ga %}		
 </footer>
