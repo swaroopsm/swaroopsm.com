@@ -1,0 +1,49 @@
+{% include header %}
+<body>
+ 
+  <div class="row">
+    <div class="large-12 columns">
+ 
+		{% include logo %}
+
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+		<div class="large-2 small-6 column center">
+			Featured Posts
+		</div>
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+
+
+   </div>
+  </div><br>
+
+	<div class="row">
+		<div class="large-12 columns">
+			{% for page in site.categories.blog %}
+			<h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
+			<p class="post-info">
+				<i class="ion-calendar"></i> <span>{{ page.date | date: "%B %d, %Y" }}</span>
+				<i class="ion-pricetags"></i>
+			</p>
+			<br>
+			<div>
+				{{ page.content | truncatewords: 90 }}
+			</div>
+			<a href="{{ page.url }}">Read More <sub><i class="ion-more"></i></sub></a>
+			<br><br><br>
+			{% endfor %}
+		</div>
+	</div>
+ 
+    <!-- Footer -->
+ 
+  	<br>
+  	<br>
+  	<br>
+  	
+{% include footer %}
+</body>
+</html>

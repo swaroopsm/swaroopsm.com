@@ -1,0 +1,44 @@
+{% include header %}
+<body onload="prettyPrint();">
+ 
+  <div class="row">
+    <div class="large-12 columns">
+ 
+		{% include logo %}
+
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+		<div class="large-2 small-6 column center">
+			By {{ page.author }}
+		</div>
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+
+
+   </div>
+  </div><br>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<p class="post-info">
+				<i class="ion-calendar"></i> <span>{{ page.date | date: "%B %d, %Y" }}</span>
+				<i class="ion-pricetags"></i>
+			</p>
+			<div>
+				{{ page.content }}
+			</div>
+		</div>
+	</div>
+ 
+    <!-- Footer -->
+ 
+  	<br>
+  	<br>
+  	<br>
+  	
+{% include footer %}
+<script src="/assets/js/prettify.min.js" type="text/javascript"></script>
+</body>
+</html>
