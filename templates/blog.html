@@ -27,9 +27,12 @@
 			<p class="post-info">
 				<i class="ion-calendar"></i> <span>{{ page.date | date: "%B %d, %Y" }}</span>
 				<i class="ion-pricetag"></i>
-				{% for tag in page.tags %}
+				<span>
+					{% for tag in page.tags %}
 					<a href="{{ tag.url }}">{{ tag.name | downcase }}</a>{% unless forloop.last %}, {% endunless %}
-				{% endfor %}
+					{% endfor %}
+				</span>
+				<i class="ion-bookmark"></i> <span><a href="{{ site.links.tagged }}">tags filter</a></span>
 			</p>
 			<br>
 			<div>
