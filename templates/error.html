@@ -1,0 +1,73 @@
+{% include header %}
+<body>
+ 
+  <div class="row">
+    <div class="large-12 columns">
+ 
+		{% include logo %}
+
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+		<div class="large-2 small-6 column center">
+			Web Developer, Bangalore, IN
+		</div>
+		<div class="large-5 small-3 columns">
+			<hr>
+		</div>
+ 
+    <!-- Mobile Header -->
+ 
+ 
+    <!-- <div class="row"> -->
+    <!--   <div class="small&#45;12 show&#45;for&#45;small"><br> -->
+    <!--     <img src="http://placehold.it/1000x600&#38;text=For Small Screens" /> -->
+    <!--   </div> -->
+    <!-- </div> -->
+ 
+ 
+  <!-- End Mobile Header -->
+
+		<div class="center extra-padding">
+			<div class="huge-size">
+				<i class="ion-battery-empty"></i>
+				{{ page.content }}
+			</div>
+		</div>
+ 
+		<div class="extra-padding center">
+			<div class="large-3 medium-3 small-6 columns social-icons">
+				<a href="{{ site.links.work }}">
+					<i class="ion-ios7-gear huge-size"></i> <p>Work</p>
+				</a>
+			</div>
+			<div class="large-3 medium-3 small-6 columns social-icons">
+				<a href="http://github.com/swaroopsm">
+					<i class="ion-code huge-size"></i> <p>Code</p>
+				</a>
+			</div>
+			<div class="large-3 medium-3 small-6 columns social-icons">
+				<a href="{{ site.links.blog }}">
+					<i class="ion-clipboard huge-size"></i> <p>Blog</p>
+				</a>
+			</div>
+			<div class="large-3 medium-3 small-6 columns social-icons">
+				<a href="mailto: swaroop.sethumadhavan@gmail.com">
+					<i class="ion-ios7-email huge-size"></i> <p>Contact</p>
+				</a>
+			</div>
+		</div>
+
+   </div>
+  </div><br>
+
+ 
+    <!-- Footer -->
+ 
+  	<br>
+  	<br>
+  	<br>
+  	
+{% include footer %}
+</body>
+</html>
