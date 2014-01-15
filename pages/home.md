@@ -10,4 +10,4 @@ Hey there! I am an Indian. An Amateur Guitarist.
 
 Love sipping Tea!
 
-I am a [Programmer](http://en.wikipedia.org/wiki/Programmer) & code primarily using [Ruby](http://ruby-lang.org).
+I am a [Programmer](http://en.wikipedia.org/wiki/Programmer) & love to code in [Ruby](http://ruby-lang.org).
