@@ -12,6 +12,7 @@ tagged:
  - rails
  - apache
  - web
+keywords: deploy, ruby, rails, apache, passenger
 ---
 
 You have built an awesome application using Ruby on Rails, and have no idea how to make it available to the world wide web.

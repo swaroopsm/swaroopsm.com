@@ -4,7 +4,7 @@ author: Swaroop SM
 date: 2014-01-12
 label: Swaroop Sethumadhavan
 template: home
-keywords: Swaroop SM, Swaroop's, Home
+keywords: Swaroop SM, Swaroop Sethumadhavan, Swaroop's, Home
 ---
 Hey there! I am an Indian. An Amateur Guitarist.
 

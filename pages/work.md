@@ -3,6 +3,7 @@ title: Work
 author: Swaroop SM
 date: 2014-01-12
 template: work
+keywords: Featured Work, Swaroop SM, Swaroop Sethumadhavan
 ---
 {% section first~ui/ux %}
 <a href="http://ksec.in">
