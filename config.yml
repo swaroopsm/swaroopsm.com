@@ -24,6 +24,3 @@ taginfo:
    description: A web server application.
  - name: web
    description: A system of interlinked hypertext documents accessed via the Internet.
-remote:
- host: swaroopsm.com
- path: sites/swaroopsm.com
