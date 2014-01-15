@@ -1,7 +1,7 @@
 .circle:hover {
-  -webkit-animation: spin 4s linear infinite;
-  -moz-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+  -moz-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 i.logo-icon {
   color: rgba(255, 0, 0, 0.78);
@@ -162,9 +162,9 @@ code {
   text-shadow: none;
 }
 .rotate-animate {
-  -webkit-animation: spin 4s linear infinite;
-  -moz-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+  -moz-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 /* desert scheme ported from vim to google prettify */
 pre.prettyprint {
