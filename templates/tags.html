@@ -43,7 +43,11 @@
 								{{ info.description }}
 							{% endif %}
 						{% endfor %}
+						<br><br>
 						<div class="secondary-link">
+							<a href="{{ tag.url }}">
+								<i class="ion-pricetag"></i> Tagged Posts: {{ tag.pages | size }}
+							</a>
 						</div>
 					</div>
 					</li>
