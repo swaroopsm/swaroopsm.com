@@ -33,7 +33,7 @@ Once done run the following commands in sequence:
 #####3. Preparing your application
 Navigate to your `config/environments/production.rb` and set the following:
 {% highlight ruby %}
-	config.serve_static_assets = true
+	config.serve\_static\_assets = true
 	config.assets.compile = true
 {% endhighlight %}
 
