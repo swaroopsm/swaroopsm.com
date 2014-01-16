@@ -22,7 +22,7 @@
 
 	<div class="row">
 		<div class="large-12 columns">
-			<p class="post-info">
+			<p class="post-info hide-for-small">
 				<i class="ion-calendar"></i> <span>{{ page.date | date: "%B %d, %Y" }}</span>
 				<i class="ion-pricetag"></i> 
 				<span>
@@ -31,6 +31,10 @@
 					{% endfor %}
 				</span>
 				<i class="ion-bookmark"></i> <span><a href="{{ site.links.tagged }}">tags filter</a></span>
+				<i class="ion-social-twitter"></i>
+				<span>
+					{% tweetshare %}
+				</span>
 			</p>
 			<div>
 				{{ page.content }}
