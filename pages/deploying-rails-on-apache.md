@@ -16,7 +16,7 @@ keywords: deploy, ruby, rails, apache, passenger
 ---
 
 You have built an awesome application using Ruby on Rails, and have no idea how to make it available to the world wide web.
-By the end of this tutorial, you will have your application up and running on Apache. We will be using `passenger` with Apache in this post. So, let's get started. 
+By the end of this tutorial, you will have your application up and running on Apache. We will be using [passenger](https://www.phusionpassenger.com/) with Apache in this post. So, let's get started. 
 
 #####1. Install Dependecies:
 Run `$ bundle install` to install all the gems specified in the Gemfile.
@@ -31,19 +31,28 @@ Once done run the following commands in sequence:
 {% endhighlight %}
 
 #####3. Preparing your application
-Navigate to your config/environments/production.rb and set the following:
-  config.serve_static_assets = true
-  config.assets.compile = true
+Navigate to your `config/environments/production.rb` and set the following:
+{% highlight ruby %}
+	config.serve_static_assets = true
+	config.assets.compile = true
+{% endhighlight %}
 
-Run `$ bundle exec rake assets:precompile` to compile all your stylesheets and javascripts
+Run the to compile all your stylesheets and javascripts
+{% highlight bash %}
+	$ bundle exec rake assets:precompile
+{% endhighlight %}
 
 #####4. Install Passenger
 This is the gem that does all the magic of deploying our rails application.
-`$ gem install passenger`
+{% highlight bash %}
+	$ gem install passenger
+{% endhighlight %}
 
 #####5. Configure Apache for serving the App
 Run the following command:
+{% highlight bash %}
 	$ passenger-install-apache2-module
+{% endhighlight %}
 
 * If there are any dependencies that Apache needs, it prompts and you can install it via your package manager.(then again run: passenger-install-apache2-module).
 
