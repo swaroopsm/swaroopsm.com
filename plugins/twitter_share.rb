@@ -11,7 +11,8 @@ module Striker
 				page = context.environments[0]['page']
 				hashtags = page['tags'].map{ |tag| tag['name'].strip }.join(",")
 				<<-TWITTERSHARE
-					<a href="#" onclick="javascript:window.open('http://twitter.com/share?url=#{site['url']}#{page['url']}&text=#{site['name']} -  #{page['title']}&via=smswaroop&hashtags=#{hashtags}', '', 'width=650, height=350')">tweet</a>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="smswaroop" data-url="#{site['url']}#{page['url']}" data-hashtags="#{hashtags}" data-size="large">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 				TWITTERSHARE
 			end
 
