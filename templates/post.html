@@ -31,14 +31,11 @@
 					{% endfor %}
 				</span>
 				<i class="ion-bookmark"></i> <span><a href="{{ site.links.tagged }}">tags filter</a></span>
-				<i class="ion-social-twitter"></i>
-				<span>
-					{% tweetshare %}
-				</span>
 			</p>
 			<div>
 				{{ page.content }}
 			</div>
+			{% tweetshare %}  	
 		</div>
 	</div>
  
@@ -47,7 +44,6 @@
   	<br>
   	<br>
   	<br>
-  	
 {% include footer %}
 <script src="/assets/js/prettify.min.js" type="text/javascript"></script>
 </body>
