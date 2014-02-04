@@ -26,9 +26,9 @@
 				{% for section in page.sections %}
 					<li class="radius">
 					<div class="panel no-border">
-						{{ section.content }}
+						{{ section[1] }}
 						<div class="secondary-link">
-							<i class="ion-pin"></i> {{ section.name | split: "~" | last | upcase }}
+							<i class="ion-pin"></i> {{ section[0] | split: "~" | last | upcase }}
 						</div>
 					</div>
 					</li>
