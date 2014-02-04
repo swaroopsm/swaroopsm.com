@@ -139,10 +139,15 @@ pre {
   line-height: 1.5;
 }
 code {
-  background: #eee;
+  background-color: #eee;
   color: #004466;
   padding: 5px;
   font-size: 95%;
+}
+pre code {
+  background-color: #fff;
+  padding: 0px;
+  font-size: 100%;
 }
 .tags h1,
 .tags h2,
@@ -169,7 +174,7 @@ code {
 /* desert scheme ported from vim to google prettify */
 pre.prettyprint {
   display: block;
-  background-color: #333333;
+  background-color: #333;
 }
 pre .nocode {
   background-color: none;
