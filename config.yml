@@ -24,3 +24,5 @@ taginfo:
    description: A web server application.
  - name: web
    description: A system of interlinked hypertext documents accessed via the Internet.
+ - name: vim
+   description: Vim(Vi IMproved) is a text editor based on the vi editor.
