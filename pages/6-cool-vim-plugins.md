@@ -42,12 +42,12 @@ Get this plugin: [CtrlP](https://github.com/kien/ctrlp.vim)
 \</html>
 {% endhighlight %}
 
-It would be great if you can display the above snippet, each time you start a new `html web page`. This greatly decreases your time by using these in your code. You can also enter a `div` or `span` tag with an `id` or `class` attribute quickly.
+It would be great if you can insert the above snippet, each time you start a new `html web page`. By using this plugin, it greatly decreases the time to code your webpage that consists a lot off markup. You can also enter a `div` or `span` tag with an `id` or `class` attribute quickly.
 
 Get this plugin: [Emmet-VIM](https://github.com/mattn/emmet-vim)
 
 #### 4. Vim Multiple Cursors
-Do you envy [Sublime Text](http://sublimetext.com) Multiple Selection? Well not any more. [Vim Multiole Cursors](https://github.com/terryma/vim-multiple-cursors) is an attemt to accomplish this feature. Here are some ways to achieve this.
+Do you envy [Sublime Text](http://sublimetext.com) Multiple Selection? Well not any more. [Vim Multiple Cursors](https://github.com/terryma/vim-multiple-cursors) is an attempt to accomplish this feature. Here are some ways to achieve this.
 
 To select multiple words and replace:
 
@@ -61,9 +61,9 @@ Get this plugin: [Vim Multiple Cursors](https://github.com/terryma/vim-multiple-
 
 
 #### 5. Instant Markdown:
-If you always use a `README`, keep updating it frequently and would love to preview it before you push it a code hosting service, such as [Github](http://github.com), then [Instant Markdown](https://github.com/suan/vim-instant-markdown) is the plugin that can let this happen.
+If you always use a `README` in your project, and you keep updating it frequently and would love to preview it before you push it to a code hosting service(if you are using one), such as [Github](http://github.com), then [Instant Markdown](https://github.com/suan/vim-instant-markdown) is the plugin that can let this happen.
 
-The plugin updates the display in realtime, as you are editing your markdown file. By default, this plugin will open the files in a `browser` with `localhost:port` as soon as you open `.markdown`, `.mdown` and `README.md`. If you would like this plugin to work for any `.md` files, then install [vim-markdown](https://github.com/tpope/vim-markdown).
+The plugin updates the display in realtime, as you are editing your markdown file. By default, this plugin will open the files in a browser with `localhost:port` as soon as you open `.markdown`, `.mdown` and `README.md`. If you would like this plugin to work for any `.md` files, then install [vim-markdown](https://github.com/tpope/vim-markdown).
 
 Get this plugin: [Instant Markdown](https://github.com/suan/vim-instant-markdown)
 
