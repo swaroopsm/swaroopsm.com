@@ -1,7 +1,7 @@
 ---
 title: 6 Cool Vim Plugins
 author: Swaroop SM
-date: 2014-01-28
+date: 2014-02-04
 template: post
 category: blog
 permalink:
