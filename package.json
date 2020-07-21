@@ -9,7 +9,10 @@
     "clean": "rm -rf _site",
     "dev:11ty": "eleventy --serve --incremental",
     "dev:postcss": "NODE_ENV=development postcss assets/css/site.css --dir _site/assets --watch",
-    "dev": "run-p clean dev:*"
+    "dev": "run-p clean dev:*",
+    "netlify": "npm-run-all --sequential build:site:11ty --parallel build:site:styles",
+    "build:site:11ty": "eleventy",
+    "build:site:styles": "NODE_ENV=production postcss 'assets/css/site.css' --dir _site/assets"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
