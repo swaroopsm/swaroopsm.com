@@ -1,0 +1,9 @@
+@import "base";
+
+@tailwind components;
+
+.container {
+  @apply max-w-6xl mx-auto;
+}
+
+@tailwind utilities;

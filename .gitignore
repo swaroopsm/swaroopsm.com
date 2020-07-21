@@ -2,3 +2,5 @@ public/
 server.yml
 robots.txt
 sitemap.xml
+_site
+node_modules
