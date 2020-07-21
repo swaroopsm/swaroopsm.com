@@ -15,6 +15,6 @@ module.exports = {
   purge: [
     "./content/**/*.liquid",
     "./_layouts/**/*.liquid",
-    "./_includes/partials/**/*.liquid"
+    "./_includes/**/*.liquid"
   ]
 };

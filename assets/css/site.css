@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 @import "base";
 
 @tailwind components;
@@ -5,5 +7,7 @@
 .container {
   @apply max-w-6xl mx-auto;
 }
+
+/* purgecss end ignore */
 
 @tailwind utilities;
