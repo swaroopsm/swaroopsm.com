@@ -8,6 +8,46 @@
   @apply max-w-6xl mx-auto;
 }
 
+.theme-toggle-switch {
+  @apply flex items-center justify-center;
+}
+
+.theme-toggle-switch > input[type="checkbox"] {
+  @apply w-0 h-0 invisible;
+}
+
+.theme-toggle-switch > label {
+  cursor: pointer;
+  text-indent: -9999px;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  @apply w-10 h-5 bg-white;
+}
+
+.theme-toggle-switch > label:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -5px;
+  background: #222;
+  transition: 0.3s;
+  @apply w-6 h-6 rounded-full;
+}
+
+.mode-dark .theme-toggle-switch > label:after {
+  background: #fff;
+}
+
+.theme-toggle-switch > input:checked + label {
+  /* @apply bg-black; */
+}
+
+.theme-toggle-switch > input:checked + label:after {
+  left: calc(100% + 5px);
+  transform: translateX(-100%);
+}
+
 /* purgecss end ignore */
 
 @tailwind utilities;

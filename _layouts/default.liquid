@@ -16,13 +16,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   {% endif %}
 </head>
-<body class="font-sans antialiased font-normal text-black">
+<body class="font-sans antialiased font-normal text-black dark:bg-black-10 dark:text-white transition-colors duration-300">
   {% if env.ENV == "production" %}
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQBM5N3"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   {% endif %}
+
+  <div class="flex items-center justify-center space-x-4 pt-6 text-xs uppercase font-bold lg:text-sm">
+    <span>Light</span>
+    <div class="theme-toggle-switch">
+      <input type="checkbox" id="theme-switch">
+      <label for="theme-switch" class="border dark:border dark:border-white dark:bg-black">Toggle</label>
+    </div>
+    <span>Dark</span>
+  </div>
 
   {% include "header" %}
 
@@ -31,5 +40,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </main>
 
   {% include "footer" %}
+  <script src="/assets/default.page.js"></script>
 </body>
 </html>

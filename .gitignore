@@ -4,3 +4,4 @@ robots.txt
 sitemap.xml
 _site
 node_modules
+*.log

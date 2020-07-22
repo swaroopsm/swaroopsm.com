@@ -12,9 +12,19 @@ module.exports = {
       transparent: "transparent"
     }
   },
+  variants: {
+    backgroundColor: ["dark"],
+    textColor: ["dark"],
+    boxShadow: ["dark", "dark-focus"],
+    borderColor: ["dark"]
+  },
+  plugins: [require("tailwindcss-dark-mode")()],
   purge: [
     "./content/**/*.liquid",
     "./_layouts/**/*.liquid",
     "./_includes/**/*.liquid"
-  ]
+  ],
+  options: {
+    whitelist: ["mode-dark"]
+  }
 };
