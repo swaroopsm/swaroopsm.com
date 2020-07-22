@@ -19,12 +19,14 @@ module.exports = {
     borderColor: ["dark"]
   },
   plugins: [require("tailwindcss-dark-mode")()],
-  purge: [
-    "./content/**/*.liquid",
-    "./_layouts/**/*.liquid",
-    "./_includes/**/*.liquid"
-  ],
-  options: {
-    whitelist: ["mode-dark"]
+  purge: {
+    content: [
+      "./content/**/*.liquid",
+      "./_layouts/**/*.liquid",
+      "./_includes/**/*.liquid"
+    ],
+    options: {
+      whitelist: ["mode-dark"]
+    }
   }
 };

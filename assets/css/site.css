@@ -39,10 +39,6 @@
   background: #fff;
 }
 
-.theme-toggle-switch > input:checked + label {
-  /* @apply bg-black; */
-}
-
 .theme-toggle-switch > input:checked + label:after {
   left: calc(100% + 5px);
   transform: translateX(-100%);
