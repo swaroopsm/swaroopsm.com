@@ -11,7 +11,7 @@
     "dev:postcss": "NODE_ENV=development postcss assets/css/site.css --dir _site/assets --watch",
     "dev:weboack": "webpack --config webpack.config.js --env.NODE_ENV=development --watch",
     "dev": "run-p clean dev:*",
-    "netlify": "npm-run-all --sequential build:site:11ty --parallel build:site:styles",
+    "netlify": "npm-run-all --sequential build:site:11ty --parallel build:site:styles build:site:js",
     "build:site:11ty": "eleventy",
     "build:site:styles": "NODE_ENV=production postcss 'assets/css/site.css' --dir _site/assets",
     "build:site:js": "webpack --config webpack.config.js --env.NODE_ENV=production"
