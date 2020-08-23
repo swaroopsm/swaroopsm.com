@@ -1,19 +1,33 @@
-<header class="px-6">
-  <div class="container pt-16 lg:pt-24 flex items-center justify-center">
-    <a href="/" class="inline-block border-black hover:border-b-2">
-      <div class="flex items-center">
-        <img src="/assets/images/avatar.jpg" alt="Photo of Swaroop Sethumadhavan" class="w-16 rounded-full inline" />
-        <span class="text-3xl lg:text-4xl font-bold ml-1">
-          /swaroop
-        </span>
+<header class="p-6">
+  <div class="flex justify-between container{% if settings.header == 'highlight' %} flex-col-reverse{% endif %}">
+    <div class="{% if settings.header == 'highlight' %}pt-16 lg:pt-24{% endif %}">
+      <div class="container flex items-center justify-center">
+        <a href="/" class="inline-block border-black hover:border-b-2">
+          <div class="flex items-center">
+            <img src="/assets/images/avatar.jpg" alt="Photo of Swaroop Sethumadhavan" class="w-8 rounded-full inline{% if settings.header == 'highlight' %} w-16{% endif %}" />
+            <span class="text-2xl font-bold ml-1{% if settings.header == 'highlight' %} text-3xl lg:text-4xl{% endif %}">
+              /swaroop
+            </span>
+          </div>
+        </a>
       </div>
-    </a>
+      <nav class="flex items-center justify-center mt-6{% unless settings.header == 'highlight'%} hidden{% endunless %}">
+        <ul class="flex space-x-6 lg:text-xl">
+          <li><a  href="mailto:{{site.mail}}">/mail</a></li>
+          <li><a href="{{site.github}}" target="_blank" rel="noopener noreferrer">/github</a></li>
+          <li><a href="{{site.twitter}}" target="_blank" rel="noopener noreferrer">/twitter</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="flex items-center justify-center space-x-4 text-xs uppercase font-bold text:xs lg:text-sm">
+      <span>Light</span>
+      <div class="theme-toggle-switch">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="border dark:border dark:border-white dark:bg-black">Toggle</label>
+      </div>
+      <span>Dark</span>
+    </div>
+
   </div>
-  <nav class="flex items-center justify-center mt-6">
-    <ul class="flex space-x-6 lg:text-xl">
-      <li><a  href="mailto:{{site.mail}}">/mail</a></li>
-      <li><a href="{{site.github}}" target="_blank" rel="noopener noreferrer">/github</a></li>
-      <li><a href="{{site.twitter}}" target="_blank" rel="noopener noreferrer">/twitter</a></li>
-    </ul>
-  </nav>
 </header>

@@ -1,0 +1,4 @@
+{
+  "permalink": "/til/{{ slug }}/",
+  "tags": ["til"]
+}

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+
+<div class="max-w-3xl mx-auto text-left px-6 text-xl leading-relaxed font-serif">
+  <a href="/" class="flex items-center text-sm lg:text-base text-gray-20 flex mt-4 font-sans font-bold uppercase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="8" stroke="currentColor" fill="none" class="w-3 h-3 mr-1 transform rotate-180"><path d="M18.86 57.47l25.26-26.63L18.86 6.58"></path></svg>
+    Home
+  </a>
+
+  <div class="py-4 lg:py-12 ">
+    <h1 class="text-4xl font-bold leading-snug">{{title}}</h1>
+
+    <ul class="flex space-x-2 font-sans text-base text-gray-30 dark:text-gray-20 py-2">
+      <li>{{ page.date | date: "%b %d, %Y" }}</li>
+      <li><strong>&middot;</strong>&nbsp;&nbsp;{{ content | readTime }}</li>
+    </ul>
+
+    <div class="prose prose-lg lg:prose-xl dark:prose-dark my-8 lg:my-12">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+<script src="/assets/article.page.js"></script>

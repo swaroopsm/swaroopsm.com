@@ -1,9 +1,31 @@
-<div class="container text-center px-6 py-4 lg:py-12">
-  <h2 class="text-2xl lg:text-4xl">
-    <span class="block my-2">👋 </span><span></span> <span class="font-bold inline-block border-b-2">Swaroop Sethumadhavan</span>
+---
+settings:
+  header: highlight
+---
+
+<section class="container text-center px-6 lg:py-8">
+  <h2 class="text-3xl lg:text-5xl">
+    <span class="block">👋 </span>
+    <span class="font-bold inline-block border-b-2 mt-2">Swaroop Sethumadhavan</span>
   </h2>
   <div class="max-w-3xl mx-auto mt-6 leading-loose text-lg lg:text-2xl lg:py-6 px-6">
     <p>I work as a Front-End Developer at <a class="border-b" href="https://www.shopify.com" target="_blank">Shopify</a> and currently live in  <span class="whitespace-no-wrap">Berlin, DE 🇩🇪</span></p>
     <p><a class="border-b" href="mailto:{{site.mail}}">Chat with me</a> about JAMstack, React, JavaScript and the Web.</p>
   </div>
-</div>
+</section>
+
+<section class="max-w-3xl mx-auto px-6 py-8">
+  <h2 class="text-xl lg:text-2xl inline-block lowercase">
+    Today I Learned:
+  </h2>
+
+  <ul class="my-2 list-disc pl-4">
+  {% for til in collections.til %}
+    <li class="pl-2">
+      <a href="{{ til.url }}">
+        <h3 class="text-xl lg:text-2xl hover:underline font-bold">{{ til.data.title }}</h3>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

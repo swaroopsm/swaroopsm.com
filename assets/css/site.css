@@ -44,6 +44,23 @@
   transform: translateX(-100%);
 }
 
+/* Typography */
+.mode-dark {
+  .dark\:prose-dark {
+    code {
+      color: theme("colors.white");
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    a {
+      color: theme("colors.white");
+    }
+  }
+}
+
 /* purgecss end ignore */
 
 @tailwind utilities;

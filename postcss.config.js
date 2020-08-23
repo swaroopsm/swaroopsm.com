@@ -1,5 +1,6 @@
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
+const postcssNested = require("postcss-nested");
 const postcssImport = require("postcss-import")({
   root: "./assets/css/"
 });
@@ -13,6 +14,7 @@ module.exports = ctx => {
   return {
     plugins: [
       postcssImport,
+      postcssNested,
       tailwindcss,
       autoprefixer,
       isProduction ? cssnano : null
