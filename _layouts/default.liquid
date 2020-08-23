@@ -13,10 +13,10 @@
     {% endif %}
   </script>
 
-  <title>{{ meta.title | default: "Swaroop Sethumadhavan | Front-End Developer at Shopify" }}</title>
+  <title>{{ meta.title }}</title>
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ meta.title | default: "Swaroop Sethumadhavan | Front-End Developer at Shopify" }}" />
-  <meta property="og:description" content="{{ meta.description | default: 'I work as a Front-End developer  at Shopify  currently living in Berlin, DE.'}}" />
+  <meta property="og:title" content="{{ meta.title }}" />
+  <meta property="og:description" content="{{ meta.description }}"/>
   <link rel="canonical" href="{{ meta.canonical | prepend: site.url }}" />
 
   <link rel="stylesheet" href="/assets/site.css" />
