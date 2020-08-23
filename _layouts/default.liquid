@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swaroop Sethumadhavan | Front-End Developer at Shopify</title>
+  <title>{{ meta.title | default: "Swaroop Sethumadhavan | Front-End Developer at Shopify" }}</title>
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Swaroop Sethumadhavan | Front-End developer at Shopify" />
-  <meta property="og:description" content="I work as a Front-End developer  at Shopify  currently living in Berlin, DE." />
+  <meta property="og:title" content="{{ meta.title | default: "Swaroop Sethumadhavan | Front-End Developer at Shopify" }}" />
+  <meta property="og:description" content="{{ meta.description | default: 'I work as a Front-End developer  at Shopify  currently living in Berlin, DE.'}}" />
   <link rel="canonical" href="{{site.url}}" />
 
   <link rel="stylesheet" href="/assets/site.css" />
