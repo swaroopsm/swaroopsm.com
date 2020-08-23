@@ -7,6 +7,9 @@ module.exports = config => {
   config.addPassthroughCopy({ "./assets/images": "assets/images" });
 
   config.addFilter("readTime", text => readingTime(text).text);
+  config.addFilter("sanitizeurl", url =>
+    url === "/" ? url : url.replace(/\/*$/, "")
+  );
 
   return {
     dir: {
