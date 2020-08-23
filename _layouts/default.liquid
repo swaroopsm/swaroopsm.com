@@ -3,11 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    {% comment %} Remove trailing slash only for Netlify builds {% endcomment %}
+    {% if env.NETLIFY %}
+    const pathname = window.location.pathname;
+    if (pathname.length > 1 && pathname.match(/\/$/)) {
+      window.location.pathname = pathname.replace(/\/$/, '');
+    }
+    {% endif %}
+  </script>
+
   <title>{{ meta.title | default: "Swaroop Sethumadhavan | Front-End Developer at Shopify" }}</title>
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ meta.title | default: "Swaroop Sethumadhavan | Front-End Developer at Shopify" }}" />
   <meta property="og:description" content="{{ meta.description | default: 'I work as a Front-End developer  at Shopify  currently living in Berlin, DE.'}}" />
-  <link rel="canonical" href="{{site.url}}" />
+  <link rel="canonical" href="{{ meta.canonical | prepend: site.url }}" />
 
   <link rel="stylesheet" href="/assets/site.css" />
 

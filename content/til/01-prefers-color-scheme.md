@@ -3,10 +3,6 @@ layout: til
 slug: "detect-system-color-scheme-appearance"
 title: "Detect if the system prefers dark / light mode"
 date: 2020-08-23
-eleventyComputed:
-  meta:
-    title: "{{title}}"
-    description: "`prefers-color-scheme` is a CSS media feature that lets you detect if the user prefers a dark / light mode on their system."
 ---
 
 There exists a CSS media feature called `prefers-color-scheme` that lets you detect if the user prefers a dark / light mode on their system.
