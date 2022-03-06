@@ -20,14 +20,15 @@
       </nav>
     </div>
 
-    <div class="flex items-center justify-center space-x-4 text-xs uppercase font-bold text:xs lg:text-sm">
-      <span>Light</span>
-      <div class="theme-toggle-switch">
-        <input type="checkbox" id="theme-switch">
-        <label for="theme-switch" class="border dark:border dark:border-white dark:bg-black">Toggle</label>
-      </div>
-      <span>Dark</span>
-    </div>
-
+    <theme-switcher>
+      <label class="flex items-center justify-center space-x-4 text-xs uppercase font-bold text:xs lg:text-sm them">
+        <span class="cursor-pointer">Light</span>
+        <div class="theme-toggle-switch">
+          <input type="checkbox" id="theme-switch">
+          <span class="border dark:border dark:border-white dark:bg-black">Toggle</span>
+        </div>
+        <span class="cursor-pointer">Dark</span>
+      </label>
+    </theme-switcher>
   </div>
 </header>

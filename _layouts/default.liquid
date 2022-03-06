@@ -11,6 +11,20 @@
       window.location.pathname = pathname.replace(/\/$/, '');
     }
     {% endif %}
+
+    (function() {
+      if(window.localStorage && !window.localStorage.getItem('site__theme')) {
+        if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          if (window.localStorage) {
+            document.documentElement.classList.add('mode-dark');
+          }
+        }
+      }
+
+      if (window.localStorage && window.localStorage.getItem('site__theme') === 'dark') {
+        document.documentElement.classList.add('mode-dark');
+      }
+    })();
   </script>
 
   <title>{{ meta.title }}</title>
